@@ -17,20 +17,24 @@ Pass the memory address of that player to your TakeDamage function (using the & 
 
 package main
 
+import "fmt"
+
 type Player struct {
 	name   string
 	health int
 }
 
+func TakeDamage(p *Player, Damage int) {
+	p.health = p.health - Damage
+}
+
 func main() {
-
-	plyer := Player["Rohit", 100]
-	p := &plyer
-
-	func takeDamage(p player, )    {
-		
+	plyer := Player{
+		name:   "Authur",
+		health: 100,
 	}
+	TakeDamage(&plyer, 20)
 
-	
+	fmt.Println(plyer.name, plyer.health)
 
 }
