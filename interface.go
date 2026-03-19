@@ -5,6 +5,8 @@
 
 Basically an interface gives a signature a type should have to implement that interface .To say that type satisfies this interface.
 
+Interface in go imlicitly
+
 */
 
 package main
@@ -30,7 +32,7 @@ func main() {
 	a = f // Here we can assign an instance of Myfloat to a variable of type Abser interface
 	a = &v
 
-	a = v
+	a = v // Here v is a value and does not implement Abser
 
 	fmt.Println()
 }
