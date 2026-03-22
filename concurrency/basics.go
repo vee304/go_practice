@@ -24,3 +24,10 @@ func main() {
 
 // What is concurrency ??
 /* Managing the execution of different task effieciently so that it does not block system flow.*/
+
+// Everygo program starts with main go routine and other go routine are spawned from the main go routines.
+// and the main func. reuturn all the go routines are abandon and gets collected by garbage collector. Because as long as the main go routine is running all the other go routines are executing concurrently with main go routine.
+
+// Go does not work on the philosphy of sharing memory/state in concurrency but rather sharing state using communication.
+
+// Go has this primitive called channels. it allow go routines to communicate and send data to each other.
